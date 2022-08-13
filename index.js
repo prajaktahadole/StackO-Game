@@ -42,6 +42,7 @@ function press(num, alph){
     console.log(score, output);
     document.getElementById("score").textContent = score;
     document.getElementById("tiles").textContent = `${tiles}Tiles left`;
+    document.querySelector(".displaydata").textContent = output;
 }
 
 
