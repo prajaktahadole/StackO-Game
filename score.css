@@ -1,0 +1,75 @@
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  #container {
+    width: 70%;
+    height: 580px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: auto;
+    text-align: center;
+    background-image: linear-gradient(
+      to right,
+      rgb(132, 163, 211),
+      rgb(148, 224, 157)
+    );
+    border-radius: 15px;
+  }
+  h1 {
+    color: rgb(230, 82, 37);
+    padding: 20px;
+  }
+  #scoreDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    margin: 0 auto;
+    color: white
+  }
+  #score,#Hscore{
+    color: rgb(98, 87, 223);
+  }
+  #words{
+   overflow-y: scroll;
+    height: 200px;
+    text-align:left;
+    color: rgb(100, 32, 189);
+    margin: auto;
+    width: 20%;
+    padding:10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 5px;
+  }
+  #wordsDiv>h2{
+    color: royalblue;
+  }
+  #redirect{
+    background-image: linear-gradient(
+      to right,
+      rgb(212, 119, 219),
+      rgb(126, 84, 210)
+    );
+    padding: 5px 80px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  #redirect:hover{
+    background-image: linear-gradient(
+      to right,
+      rgb(126, 84, 210),
+      rgb(212, 119, 219)
+    );
+  }
