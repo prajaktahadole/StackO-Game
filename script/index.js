@@ -28,7 +28,7 @@ var powerPointer = 0
 var totalScore = 0
 var tilesCount = 0
 var currentWord = ""
-var answerArray = []
+var resultArray = []
 var yourWords=[]
 
 //Constructor Function
@@ -174,4 +174,33 @@ function Display(alphaArray) {
         })
         alphaDiv.append(containerDiv)
     })
+}
+
+
+
+
+
+
+//Creating Word
+
+function addToWord(letter, index, isPower) {
+
+    deleteBut.setAttribute("style", "display:block");
+
+    submitBut.setAttribute("style", "display:block");
+
+    footer.setAttribute("style", "display:block");
+  
+    alphaArray[index].count--;
+
+    result.innerHTML = null
+    resultArray.push([letter, index, isPower])
+    currentWord = ""
+    resultArray.map(item => {
+        currentWord += item[0].name;
+    })
+    tilesCount--
+    result.innerHTML = currentWord;
+   
+    Display(alphaArray);
 }

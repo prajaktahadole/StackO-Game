@@ -59,7 +59,7 @@
     grid-gap: 13px;
     width: 95%;
     height: 380px;
-    margin: auto;
+    margin-bottom: 15px;
 }
 #footer{
     color: rgb(190, 190, 190);
@@ -75,8 +75,8 @@
     text-align: center;
 }
 #result{
-    overflow: scroll;
-    font-size: 20px;
+    color: aliceblue;
+    font-size: 25px;
     cursor: pointer;
 }
 
