@@ -9,109 +9,36 @@
 </head>
 <body>
     
+    <div class="body"> 
 
-   
-    <div class="main"> 
-        <div class="div1"> 
-            <h1>StackO Game</h1>
+        <div style="text-align: center">
+            <button id="redirect">Quit Game</button>
         </div>
-        <div class="div1">
-            <h1 id="counter"></h1>
-            <h1 id="score"></h1>
-            <h1 id="tiles"></h1>
-        </div>
-        <div class="div2">
+
+        <div class="main"> 
         
-                <button onclick="press(1 ,' A')" >
-                    <div class="alpha" >A</div>
-                    <div class="num">1</div>
-                </button>
-                <button onclick="press( 1 , ' E')">
-                    <div class="alpha">E</div>
-                    <div  class="num">1</div>
-                </button>
-                <button onclick="press(1, 'I')">
-                    <div class="alpha">I</div>
-                    <div  class="num">1</div>
-                </button>
-                <button onclick="press(1 , 'O')">
-                    <div class="alpha">O</div>
-                    <div  class="num">1</div>
-                </button>
-                <button onclick="press(1, 'U')">
-                    <div class="alpha">U</div>
-                    <div  class="num">1</div>
-                </button>
-                <button onclick="press(3, 'B')">
-                    <div  class="sp"><DL></DL></div>
-                    <div class="alpha">B</div>
-                    <div class="num">3</div>
-                </button>
-                <button onclick="press(3, 'C')">
-                    <div class="alpha">C</div>
-                    <div  class="num">3</div>
-                </button>
-                <button onclick="press(4, 'F')">
-                    <div  class="sp">DW</div>
-                    <div class="alpha">F</div>
-                    <div  class="num">4</div>
-                </button>
-                <button onclick="press(2, 'G')">
-                    <div  class="sp">TL</div>
-                    <div class="alpha" >G</div>
-                    <div  class="num">2</div>
-                </button>
-                <button onclick="press(4, 'H')">
-                    <div class="alpha">H</div>
-                    <div  class="num">4</div>
-                </button>
-                <button onclick="press(1, 'L')">
-                    <div class="alpha">L</div>
-                    <div class="num">1</div>
-                </button>
-                <button onclick="press(3, 'M')">
-                    <div class="alpha">M</div>
-                    <div  class="num">3</div>
-                </button>
-                <button onclick="press(2, 'N')">
-                    <div class="alpha">N</div>
-                    <div  class="num">2</div>
-                </button>
-                <button onclick="press(1, 'P')">
-                    <div class="alpha">P</div>
-                    <div  class="num">1</div>
-                </button>
-                <button onclick="press(1, 'R')">
-                    <div class="alpha">R</div>
-                    <div  class="num">1</div>
-                </button>
-                <button onclick="press(4, 'T')">
-                    <div class="alpha">T</div>
-                    <div  class="num">4</div>
-                </button>
-                <button onclick="press(4, 'W')">
-                    <div class="alpha">W</div>
-                    <div  class="num">4</div>
-                </button>
-                <button onclick="press(4, 'Y')">
-                    <div class="alpha">Y</div>
-                    <div  class="num">4</div>
-                </button>     
-        </div>
+            <div id="headButt">
+                <h1 id="counter">99</h1>
+                <h2 id="score">0</h2>
+                <div id="tilesLeft">
+                    <p id="tiles">All</p>
+                    <p>Tiles Left</p>
+                </div>
+            </div>
+
+            <div id="alpha"> </div>
 
 
-        <div class="displaydata"></div>
-
-        <div class="div3">
-            <button onclick="Start()">Start</button>
-            <button onclick="Remove()" id="remove">Remove</button>
-            <button onclick="deleteAll()"id="clear">delete</button>
-        </div>
-        <div class="div3">
-            <h3> Tap on the word to remove the last letter..</h3>
-        </div>
+            <div id="footButt">
+                <div id="delete"><img src="./img/delete.png" alt="delete" /></div>
+                <div id="result"></div>
+                <div id="submit"><img src="./img/tick.png" alt="submit"></div>
+            </div>
+        
+             <div id="footer"><p>Tap on the word to remove the last letter</p></div>
+         </div>
     </div>
 
 </body>
 </html>
-<script src="./index.js"></script>
+<script src="./script/index.js"></script>
