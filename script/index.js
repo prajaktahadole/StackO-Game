@@ -110,7 +110,7 @@ function Display(alphaArray) {
     }
 
     document.getElementById("score").innerText = totalScore;
-    document.getElementById("counter").innerText = tilesCount;
+    document.getElementById("tiles").innerText = tilesCount;
 
     alphaDiv.innerHTML = null;
 
